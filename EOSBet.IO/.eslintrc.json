@@ -1,0 +1,66 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "root": true,
+  "extends": ["airbnb-base", "prettier", "eslint:recommended", "plugin:react/recommended"],
+  "overrides": [
+    {
+      "files": ["src/**/*.js", "src/**/*.jsx", "src/**/*.json", "src/**/*.css,"]
+    }
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["prettier", "react", "simple-import-sort", "unused-imports"],
+  "rules": {
+    "unused-imports/no-unused-imports": "error",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "react/react-in-jsx-scope": "off",
+    "object-shorthand": ["error", "always"],
+    "comma-dangle": ["error", "never"],
+    "import/no-unresolved": "off",
+    "import/no-named-as-default": "off",
+    "import/no-named-as-default-member": "off",
+    "import/prefer-default-export": "off",
+    "no-console": "off",
+    "consistent-return": "off",
+    "class-methods-use-this": "off",
+    "func-names": "off",
+    "camelcase": "off",
+    "no-plusplus": "off",
+    "no-use-before-define": "off"
+  },
+  "ignorePatterns": [
+    "./.vscode",
+    "./.git",
+    "node_modules",
+    "./build",
+    ".env",
+    "package.json",
+    "package-lock.json",
+    "yarn.lock",
+    ".eslintrc.json",
+    "*.svg",
+    "*.png",
+    "*.ttf",
+    "*.otf",
+    "*.css",
+    "*.json",
+    "*.psd",
+    "*.gif",
+    "*.txt",
+    "*.ico",
+    "*.html",
+    "EOSBet.IO",
+    "js"
+  ]
+}

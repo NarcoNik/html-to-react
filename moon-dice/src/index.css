@@ -1,0 +1,942 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: black !important;
+  text-align: left;
+  background-color: #fff;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+/* li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+} */
+button {
+  all: unset;
+  background-color: rgba(0, 0, 0, 0);
+}
+/*SF Pro Font*/
+html {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+b {
+  font-weight: 900;
+}
+a {
+  color: #69bbff;
+}
+section {
+  box-shadow: 0 -3px 3px #353535;
+}
+.alert-info {
+  background-color: #69bbff;
+}
+/*navbar */
+.navbar {
+  background-color: #333333 !important;
+  opacity: 0.92 !important;
+  margin-top: -10px !important;
+  padding-bottom: 0px;
+  padding-right: 16px !important;
+}
+.nav-item {
+  text-align: right;
+}
+.nav-link {
+  color: white !important;
+  text-transform: uppercase;
+  text-shadow: 0 0 0.5px #ffffff;
+  margin-left: 7px !important;
+}
+.dropdown-menuu {
+  position: absolute;
+  width: 100px;
+  height: 50px !important;
+  margin-left: 30px;
+  background-color: #333333;
+  opacity: 0.92;
+}
+.dropdown-item {
+  text-align: right;
+  color: white !important;
+  text-transform: uppercase;
+  text-shadow: 0 0 0.5px #ffffff;
+}
+.dropdown-item:hover {
+  background-color: #555555 !important;
+}
+.navbar-toggler-icon {
+  opacity: 100%;
+  border-color: rgba(225, 255, 255, 1);
+}
+/*end navbar*/
+/*splash screen of the homepage*/
+#splash {
+  background: url('./img/homepage/Hero @2x.png') no-repeat;
+}
+#casino-features,
+#bankroll-features,
+#error {
+  background: url('./img/homepage/Hero @1x.png') no-repeat !important;
+  background-color: #333333 !important;
+  color: #ffffff !important;
+  text-align: center !important;
+}
+#what-is-eosbetio {
+  background: url('./img/dice/Background @1x.png') no-repeat;
+  background-color: black;
+  text-align: center;
+}
+#splash,
+#bankroll-features,
+#casino-features,
+#what-is-eosbetio {
+  background-size: cover !important;
+  background-position: center center !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+.top-padding {
+  padding-top: 75vh;
+}
+.cta-message {
+  color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+  /*font-size: 150%;*/
+  text-shadow: 0 0 0.5px #ffffff;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+}
+.cta-header {
+  font-size: 350%;
+  font-weight: 200;
+  letter-spacing: 10px;
+}
+.cta-subheader {
+  font-size: 125%;
+}
+.cta {
+  margin-bottom: 20px;
+}
+/*cta button --  this button is reused all over the site with small mods to the width/height*/
+.cta-btn {
+  /*design*/
+  border-radius: 25px !important;
+  border-width: 2px !important;
+  border-color: #ffffff !important;
+  background: rgba(0, 0, 0, 0) !important;
+  color: #ffffff !important;
+
+  /*sizing*/
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s linear;
+
+  /*font*/
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.cta-btn:hover {
+  background-color: #69bbff !important;
+  border-color: #69bbff !important;
+  box-shadow: 0 0 5px #69bbff !important;
+}
+/*end cta button*/
+.main-btn {
+  width: 80% !important;
+  position: relative !important;
+  left: 10% !important;
+  height: 60px !important;
+}
+/*end splash screen of the homepage*/
+/*casino features section of the homepage, bankroll features section of the bankroll*/
+.feature-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+}
+.feature-title:after {
+  content: '';
+  display: block !important;
+  margin-top: 5px !important;
+  width: 100% !important;
+  height: 4px !important;
+  background-color: #69bbff !important;
+  box-shadow: 0 0 5px #69bbff !important;
+}
+.heading-message {
+  line-height: 38px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  color: white;
+  text-shadow: 0 0 4px rgba(28, 243, 255, 1);
+}
+.feature-img-1x {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 80px;
+}
+.feature-img-2x {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 120px;
+}
+.feature-element {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 25px;
+  color: white;
+  padding-bottom: 1em;
+  text-align: left;
+}
+/*end casino features section of the homepage, end bankroll features section of the bankroll*/
+/*games and bankroll section of the homepage*/
+#games-and-bankroll {
+  background-color: #474747 !important;
+  text-align: center !important;
+}
+.game-btn {
+  /* same css as the cta-btn just override some sizing */
+  height: 50px !important;
+  width: 63% !important;
+  left: 0% !important;
+}
+.game-divider {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+.game-divider-line {
+  border-bottom: 2px solid !important;
+  border-color: rgba(105, 187, 255, 0.8) !important;
+}
+.game-divider-line-bold {
+  border-bottom: 2px solid !important;
+  border-color: #40f0f9 !important;
+}
+/*end games and bankroll section of the homepage*/
+/*what is eosbet.io section*/
+/*end what is eosbet.io section*/
+/*airdrop and crowdsale section of the homepage*/
+#airdrop-and-crowdsale {
+  background-color: #333333;
+}
+.ico-text-lg {
+  color: white;
+  font-weight: 500;
+  font-size: 30px;
+  text-shadow: 0 0 5px white;
+  padding-bottom: 20px;
+}
+.ico-text-md {
+  color: white;
+  font-weight: 300;
+  font-size: 25px;
+  text-shadow: 0 0 5px white;
+  padding-bottom: 10px;
+}
+/*end airdrop and crowdsale section of the homepage*/
+/*social section of the homepage*/
+#social {
+  background: black;
+  /*color: white;*/
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.social-icon {
+  width: 100px;
+  opacity: 0.5;
+  padding-bottom: 10px;
+}
+.social-icon:hover {
+  opacity: 0.95;
+}
+/*end social section of the homepage*/
+#bankroll-splash {
+  background: url('./img/bankroll/Hero @15x.png') no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  height: 100% !important;
+  width: 100% !important;
+  background-color: #333333 !important;
+}
+.action-btn-rt {
+  border-radius: 0 25px 25px 0 !important;
+  border-width: 2px 2px 2px 0 !important;
+  height: 50px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+.action-btn-lt {
+  border-radius: 25px 0 0 25px !important;
+  border-width: 2px 0 2px 2px !important;
+  height: 50px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+.action-btn-md {
+  border-radius: 0 !important;
+  border-width: 2px 2px 2px 2px !important;
+  height: 50px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+.action-input-lt {
+  /* height: 50px; */
+  background-color: #333333 !important;
+  border-width: 2px 2px 2px 2px !important;
+  border-radius: 25px;
+  border-color: white !important;
+  text-align: center !important;
+  font-size: 24px !important;
+  color: white !important;
+}
+.action-input-md {
+  /* height: 50px; */
+  background-color: #333333 !important;
+  border-width: 2px 2px 2px 2px !important;
+  border-radius: 25px;
+  border-color: white;
+  text-align: center !important;
+  font-size: 24px !important;
+  color: white !important;
+}
+.action-input-lt:focus,
+.action-input-md:focus {
+  background-color: #202020 !important;
+  color: white !important;
+}
+.action-input-lt:hover,
+.action-input-md:hover {
+  border-color: #69bbff !important;
+  box-shadow: 0 0 5px #69bbff !important;
+  transition: all 0.3s linear !important;
+}
+.fine-print {
+  text-transform: uppercase;
+  font-size: 10px !important;
+  line-height: 15px !important;
+}
+.game-message {
+  /**/
+  color: #ffffff !important;
+  text-transform: uppercase !important;
+  text-shadow: 0 0 5px white !important;
+  text-align: center !important;
+  font-weight: 400 !important;
+}
+.stat {
+  padding-left: 40px;
+  margin-top: -20px;
+  text-shadow: 0 0 1px #bebebe;
+}
+.stat-num {
+  font-size: 24px;
+  position: relative;
+  top: 2px;
+  text-shadow: 0 0 2px #bebebe;
+  font-weight: 400;
+}
+/* .input-group {
+  height: 100%;
+  max-height: 20px !important;
+} */
+.dual-btn-group-lt .btn {
+  left: 5px !important;
+}
+.dual-btn-group-rt .btn {
+  right: 5px !important;
+}
+/*game sliders css*/
+.game-slider {
+  background: #333333 !important;
+  border-width: 2px !important;
+  border-color: #ffffff !important;
+}
+.game-slider .ui-slider-handle {
+  width: 1.5em;
+  height: 1.5em;
+  top: -6px;
+  background-color: #333333;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #333333;
+}
+.game-slider .ui-slider-range {
+  background: #ffffff;
+  border-radius: 1px;
+  box-shadow: 0 0 20px #ffffff;
+}
+.game-slider-text {
+  text-shadow: 0 0 5px #69bbff;
+  font-size: 150%;
+  text-align: right;
+  color: white;
+}
+/*end game sliders css*/
+.buy-box-text {
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  font-size: 125%;
+  text-shadow: 0 0 2px #69bbff;
+  padding-left: 10px;
+}
+.play-btn {
+  font-size: 50px !important;
+  border-radius: 50px !important;
+  height: 100px !important;
+  text-transform: uppercase !important;
+
+  width: 90% !important;
+  position: relative !important;
+  left: 5% !important;
+}
+/*dice specific css*/
+#dice-splash {
+  background: url('./img/dice/Banner @3x.png') no-repeat !important;
+  background-size: cover !important;
+  padding-top: 120px !important;
+}
+#dice {
+  background: url('./img/dice/Background @1x.png') !important;
+  background-color: black !important;
+}
+.place-bets-dice,
+.roll-bets-dice {
+  background: url('./img/dice/Place Bets @1x.png') no-repeat !important;
+  background-size: 100% 100% !important;
+  padding: 50px !important;
+}
+#lucky-number {
+  font-size: 777%;
+  text-shadow: 0 0 20px white;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 700;
+}
+#lucky-number:after {
+  content: '';
+  display: block;
+  text-align: center;
+  /*bottom: 0;
+  left: 0;*/
+  width: 100%;
+  height: 0.01em;
+  box-shadow: 0 0 20px rgb(105, 187, 255);
+  background-color: rgba(105, 187, 255, 0.5);
+}
+#your-number {
+  font-size: 777%;
+  text-shadow: 0 0 10px #ffffff;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 200;
+}
+/*end dice specific css*/
+/*slots specific css*/
+#slots-splash {
+  background: url('./img/slots/Banner.png') no-repeat !important;
+  background-size: cover !important;
+  padding-top: 120px !important;
+}
+#slots {
+  background: url('./img/slots/Background.png') !important;
+  background-size: 100% 100% !important;
+  min-height: 70vh !important;
+}
+.place-bets-slots {
+  background: url('./img/slots/Place Bets.png') no-repeat !important;
+  background-size: 100% 100% !important;
+
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+.slots-machine {
+  align-content: center !important;
+}
+.dial {
+  border-radius: 10px !important;
+  position: relative !important;
+  overflow: hidden !important;
+  background-color: #ffffff !important;
+  margin-left: 1em !important;
+  box-shadow: 0 0 30px rgba(66, 226, 244, 0.8) !important;
+}
+.dial-container {
+  text-align: center !important;
+  overflow: hidden !important;
+  margin-top: -300px !important;
+}
+.dial-background {
+  position: absolute !important;
+  z-index: 2 !important;
+  margin-left: -0.9em !important;
+}
+.score-pop {
+  bottom: 10% !important;
+  display: none !important;
+  position: absolute !important;
+
+  text-align: center !important;
+  color: #00d936 !important;
+  font-size: 400% !important;
+  z-index: 10 !important;
+
+  text-shadow: 0 0 10px #2ef718 !important;
+}
+/*end slots specific css*/
+/*support page*/
+#faq {
+  background-color: #333333;
+}
+.card {
+  margin-top: 1em !important;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.16), 0 6px 6px rgba(0, 0, 0, 0.23) !important;
+  border-color: black !important;
+  --bs-card-bg: black !important;
+  border-radius: 5px 5px 5px 5px !important;
+}
+.card-header {
+  background-color: #595959 !important;
+  border-radius: 5px 5px 5px 5px;
+}
+.card-body {
+  background-color: #7a7a7a;
+  border-radius: 0 0 5px 5px;
+  color: white;
+}
+.card-btn {
+  background: rgba(0, 0, 0, 0) !important;
+  color: #69bbff !important;
+}
+/*end support page*/
+/*connect*/
+.MINT {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-fill-color: white;
+  color: white;
+  border-radius: 8px;
+  padding: 1px 3px;
+  margin: 4px;
+  text-decoration: none;
+  text-align: center;
+  -st-extends: StylableButton;
+  transition: all 0.2s ease, visibility 0s;
+  box-shadow: inset 0px 0px 16px 3px #6e7ef7;
+  font-size: 16px;
+  border-style: solid;
+  border-width: 5px 5px 9px;
+  border-image-slice: 50 40 70 fill;
+}
+.MINT {
+  font-size: 22px;
+  margin-top: 7px;
+  margin-bottom: 21px;
+}
+.MINT:hover {
+  box-shadow: inset 0px 0 43px 3px #6e7ef7;
+}
+.connect,
+.buy {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-fill-color: white;
+  color: white;
+  background-color: #006c81;
+  margin-bottom: 7px;
+  text-decoration: none;
+  text-align: center;
+}
+.buy {
+  padding: 7px 25px;
+  border-radius: 16px;
+  margin: 4px;
+}
+.connect {
+  padding: 3px 9px;
+  border-radius: 8px;
+  margin: 4px;
+  font-size: 18px;
+}
+.connect:hover,
+.buy:hover {
+  box-shadow: inset 0px 0 43px 3px #00333e;
+}
+.connect-box {
+  position: absolute;
+  z-index: 1060 !important;
+  overflow: hidden;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.424);
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.con-box {
+  margin: 0px 0px 2rem;
+  background-color: rgb(25, 27, 31);
+  border: 1px solid rgb(33, 36, 41);
+  box-shadow: rgb(0 0 0 / 5%) 0px 4px 8px 0px;
+  padding: 0px;
+  overflow: hidden auto;
+  align-self: center;
+  width: 92%;
+  max-width: 420px;
+  max-height: 90vh;
+  display: flex;
+  border-radius: 20px;
+}
+.con-boxx {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+.con-boxxx {
+  position: relative;
+}
+.crest {
+  position: absolute;
+  right: 1rem;
+  top: 14px;
+}
+.con-wal {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 1rem;
+  font-weight: 500;
+  color: inherit;
+}
+.con-wall {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.chain {
+  width: 100%;
+  padding: 0 0 7px 0;
+  text-align: center;
+  color: #8e8e8e !important;
+  font-size: 14px !important;
+}
+.con-but {
+  position: relative;
+  background-color: rgb(25, 27, 31);
+  padding: 0px 1rem 1rem;
+}
+.con-butt {
+  display: grid;
+  grid-auto-rows: auto;
+  row-gap: 16px;
+}
+.con-butto {
+  display: grid;
+  gap: 10px;
+}
+.dwNCOz {
+  margin-top: 0px;
+  opacity: 1;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  background-color: rgb(44, 47, 54);
+  padding: 1rem;
+  outline: none;
+  border: 1px solid rgb(64, 68, 79);
+  border-radius: 12px;
+  width: 90% !important;
+}
+.dAICrD {
+  display: flex;
+  flex-flow: row nowrap;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.jAqWxr {
+  display: flex;
+  flex-flow: column nowrap;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.jAqWxr > img,
+.jAqWxr span {
+  height: 24px;
+  width: 24px;
+}
+.fhFZhN {
+  padding: 0rem 1rem;
+}
+.kVlCdV {
+  padding: 1rem;
+  border: 1px solid rgb(64, 68, 79);
+  border-radius: 20px;
+  position: relative;
+  display: grid;
+  row-gap: 12px;
+  margin-bottom: 20px;
+}
+.mYoVp {
+  display: flex;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+.mYoVp div {
+  display: flex;
+  flex-flow: row nowrap;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.jaSGRG {
+  width: initial;
+  font-size: 0.825rem;
+  font-weight: 500;
+  color: rgb(143, 150, 172);
+}
+.hYTqPD {
+  border: 1px solid rgba(55, 107, 173, 0.44);
+  color: rgb(33, 114, 229);
+  background-color: transparent;
+  font-size: 16px;
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 0.825rem;
+  font-weight: 400;
+  margin-right: 8px;
+}
+.hpOYmM {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1.125rem;
+  background-color: rgb(86, 90, 105);
+  font-size: initial;
+}
+.hVuOEJ > img,
+.hVuOEJ span {
+  height: 16px;
+  width: 16px;
+}
+.wefsd {
+  border-radius: 50px;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: rgb(200, 20, 47);
+}
+.ccSfOB {
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.cXjqqP {
+  cursor: pointer;
+  color: rgb(76, 130, 251);
+  padding: 0px;
+  flex-shrink: 0;
+  display: flex;
+  text-decoration: none;
+}
+.cXjqqP:hover {
+  color: rgb(48, 81, 151);
+}
+.sdfwe {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+.kylAaZ {
+  color: rgb(143, 150, 172);
+  margin-left: 1rem;
+  font-size: 0.825rem;
+  display: flex;
+  gap: 6px;
+  text-decoration: none !important;
+}
+.faq-slots {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 43%;
+  z-index: 1050;
+}
+/*media queries deal with the slots machine, buy spins box */
+@media (min-width: 0px) {
+  .dial-container {
+    margin-top: -130px;
+  }
+  .dial-slot {
+    height: 65px;
+    width: 65px;
+  }
+  .dial {
+    height: 195px;
+  }
+  .spins-remaining,
+  .total-profit {
+    font-size: 60%;
+    padding-left: 4em;
+  }
+  .game-message {
+    margin-top: 0px;
+    font-size: 230%;
+  }
+  .how-to-play-btn {
+    width: 70% !important;
+    margin: 0 auto !important;
+  }
+}
+@media (min-width: 576px) {
+  .dial-container {
+    margin-top: -200px;
+  }
+  .dial-slot {
+    height: 100px;
+    width: 100px;
+  }
+  .dial {
+    height: 300px;
+  }
+  .spins-remaining,
+  .total-profit {
+    font-size: 60%;
+    padding-left: 5em;
+  }
+  .game-message {
+    font-size: 320%;
+  }
+  .how-to-play-btn {
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+}
+@media (min-width: 768px) {
+  .dial-container {
+    margin-top: -250px;
+  }
+  .dial-slot {
+    height: 125px;
+    width: 125px;
+  }
+  .dial {
+    height: 375px;
+  }
+  .spins-remaining {
+    text-align: left;
+    font-size: 65%;
+    padding-left: 5em;
+  }
+  .game-message {
+    margin-top: 30px;
+    font-size: 250%;
+  }
+  .total-profit {
+    text-align: right;
+    font-size: 65%;
+    padding-right: 4em;
+  }
+  .navbar {
+    padding-bottom: 16px !important;
+  }
+}
+@media (min-width: 992px) {
+  .dial-container {
+    margin-top: -350px;
+  }
+  .dial-slot {
+    height: 175px;
+    width: 175px;
+  }
+  .dial {
+    height: 525px;
+  }
+  .spins-remaining {
+    text-align: left;
+    font-size: 80%;
+    padding-left: 5.5em;
+  }
+  .total-profit {
+    text-align: right;
+    font-size: 80%;
+    padding-right: 4em;
+  }
+  .game-message {
+    font-size: 390%;
+  }
+}
+@media (min-width: 1200px) {
+  .dial-container {
+    margin-top: -380px;
+  }
+  .dial-slot {
+    height: 190px;
+    width: 190px;
+  }
+  .dial {
+    height: 570px;
+  }
+  .spins-remaining {
+    text-align: left;
+    font-size: 100%;
+    padding-left: 5.5em;
+  }
+  .total-profit {
+    text-align: right;
+    font-size: 100%;
+    padding-right: 5em;
+  }
+}
